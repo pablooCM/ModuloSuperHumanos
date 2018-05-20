@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ModuloSuperHumanos
 {
-    public partial class Poderes : Form
+    public partial class FormPoderes : Form
     {
-        public Poderes()
+        public FormPoderes()
         {
             InitializeComponent();
         }

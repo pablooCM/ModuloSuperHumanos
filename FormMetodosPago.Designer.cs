@@ -1,6 +1,6 @@
 ﻿namespace ModuloSuperHumanos
 {
-    partial class MetodosPago
+    partial class FormMetodosPago
     {
         /// <summary>
         /// Required designer variable.

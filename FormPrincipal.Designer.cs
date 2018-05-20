@@ -45,6 +45,7 @@
             this.buttonSuperHumano.TabIndex = 0;
             this.buttonSuperHumano.Text = "Gestion Super Humano";
             this.buttonSuperHumano.UseVisualStyleBackColor = true;
+            this.buttonSuperHumano.Click += new System.EventHandler(this.buttonSuperHumano_Click);
             // 
             // buttonPruebaConexion
             // 

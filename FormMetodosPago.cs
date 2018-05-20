@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ModuloSuperHumanos
 {
-    public partial class MetodosPago : Form
+    public partial class FormMetodosPago : Form
     {
-        public MetodosPago()
+        public FormMetodosPago()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ModuloSuperHumanos
 {
-    public partial class GestionVacaciones : Form
+    public partial class FormGestionVacaciones : Form
     {
-        public GestionVacaciones()
+        public FormGestionVacaciones()
         {
             InitializeComponent();
         }

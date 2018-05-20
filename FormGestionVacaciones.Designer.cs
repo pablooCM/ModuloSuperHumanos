@@ -1,6 +1,6 @@
 ﻿namespace ModuloSuperHumanos
 {
-    partial class GestionVacaciones
+    partial class FormGestionVacaciones
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace ModuloSuperHumanos
 {
-    partial class Poderes
+    partial class FormPoderes
     {
         /// <summary>
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ModuloSuperHumanos
 {
-    public partial class Reportes : Form
+    public partial class FormReportes : Form
     {
-        public Reportes()
+        public FormReportes()
         {
             InitializeComponent();
         }

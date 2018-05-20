@@ -21,5 +21,11 @@ namespace ModuloSuperHumanos
         {
 
         }
+        private void buttonSuperHumano_Click(object sender, EventArgs e)
+        {
+            FormSuperHumano nuevaVentana = new FormSuperHumano();
+            nuevaVentana.Show();
+
+        }
     }
 }

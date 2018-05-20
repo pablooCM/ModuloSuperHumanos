@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ModuloSuperHumanos
 {
-    public partial class SuperHumano : Form
+    public partial class FormSuperHumano : Form
     {
-        public SuperHumano()
+        public FormSuperHumano()
         {
             InitializeComponent();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

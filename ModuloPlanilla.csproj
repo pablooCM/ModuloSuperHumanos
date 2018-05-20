@@ -52,58 +52,58 @@
     <Compile Include="FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionEquipos.cs">
+    <Compile Include="FormGestionEquipos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionEquipos.Designer.cs">
-      <DependentUpon>GestionEquipos.cs</DependentUpon>
+    <Compile Include="FormGestionEquipos.Designer.cs">
+      <DependentUpon>FormGestionEquipos.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionVacaciones.cs">
+    <Compile Include="FormGestionVacaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionVacaciones.Designer.cs">
-      <DependentUpon>GestionVacaciones.cs</DependentUpon>
+    <Compile Include="FormGestionVacaciones.Designer.cs">
+      <DependentUpon>FormGestionVacaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="MetodosPago.cs">
+    <Compile Include="FormMetodosPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MetodosPago.Designer.cs">
-      <DependentUpon>MetodosPago.cs</DependentUpon>
+    <Compile Include="FormMetodosPago.Designer.cs">
+      <DependentUpon>FormMetodosPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="Poderes.cs">
+    <Compile Include="FormPoderes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Poderes.Designer.cs">
-      <DependentUpon>Poderes.cs</DependentUpon>
+    <Compile Include="FormPoderes.Designer.cs">
+      <DependentUpon>FormPoderes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reportes.cs">
+    <Compile Include="FormReportes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes.Designer.cs">
-      <DependentUpon>Reportes.cs</DependentUpon>
+    <Compile Include="FormReportes.Designer.cs">
+      <DependentUpon>FormReportes.cs</DependentUpon>
     </Compile>
-    <Compile Include="SuperHumano.cs">
+    <Compile Include="FormSuperHumano.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SuperHumano.Designer.cs">
-      <DependentUpon>SuperHumano.cs</DependentUpon>
+    <Compile Include="FormSuperHumano.Designer.cs">
+      <DependentUpon>FormSuperHumano.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionEquipos.resx">
-      <DependentUpon>GestionEquipos.cs</DependentUpon>
+    <EmbeddedResource Include="FormGestionEquipos.resx">
+      <DependentUpon>FormGestionEquipos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionVacaciones.resx">
-      <DependentUpon>GestionVacaciones.cs</DependentUpon>
+    <EmbeddedResource Include="FormGestionVacaciones.resx">
+      <DependentUpon>FormGestionVacaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MetodosPago.resx">
-      <DependentUpon>MetodosPago.cs</DependentUpon>
+    <EmbeddedResource Include="FormMetodosPago.resx">
+      <DependentUpon>FormMetodosPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Poderes.resx">
-      <DependentUpon>Poderes.cs</DependentUpon>
+    <EmbeddedResource Include="FormPoderes.resx">
+      <DependentUpon>FormPoderes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,11 +114,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reportes.resx">
-      <DependentUpon>Reportes.cs</DependentUpon>
+    <EmbeddedResource Include="FormReportes.resx">
+      <DependentUpon>FormReportes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SuperHumano.resx">
-      <DependentUpon>SuperHumano.cs</DependentUpon>
+    <EmbeddedResource Include="FormSuperHumano.resx">
+      <DependentUpon>FormSuperHumano.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

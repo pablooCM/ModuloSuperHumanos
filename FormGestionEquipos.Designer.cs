@@ -1,6 +1,6 @@
 ﻿namespace ModuloSuperHumanos
 {
-    partial class GestionEquipos
+    partial class FormGestionEquipos
     {
         /// <summary>
         /// Required designer variable.

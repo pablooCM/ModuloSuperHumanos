@@ -1,6 +1,6 @@
 ﻿namespace ModuloSuperHumanos
 {
-    partial class Reportes
+    partial class FormReportes
     {
         /// <summary>
         /// Required designer variable.
