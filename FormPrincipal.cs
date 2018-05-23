@@ -27,5 +27,36 @@ namespace ModuloSuperHumanos
             nuevaVentana.Show();
 
         }
+
+        private void buttonGestionEquipos_Click(object sender, EventArgs e)
+        {
+            FormGestionEquipos nuevaVenta = new FormGestionEquipos();
+            nuevaVenta.Show();
+        }
+
+        private void buttonGestionPoderes_Click(object sender, EventArgs e)
+        {
+            FormPoderes nuevaVentana = new FormPoderes();
+            nuevaVentana.Show();
+        }
+
+        private void buttonGestionVacaciones_Click(object sender, EventArgs e)
+        {
+            FormGestionVacaciones nuevaVentana = new FormGestionVacaciones();
+            nuevaVentana.Show();
+
+        }
+
+        private void buttonGestionMetodoPago_Click(object sender, EventArgs e)
+        {
+            FormMetodosPago nuevaVen = new FormMetodosPago();
+            nuevaVen.Show();
+        }
+
+        private void buttonReportes_Click(object sender, EventArgs e)
+        {
+            FormReportes nuevaV = new FormReportes();
+            nuevaV.Show();
+        }
     }
 }

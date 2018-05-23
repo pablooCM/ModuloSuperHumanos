@@ -64,6 +64,7 @@
             this.buttonGestionPoderes.TabIndex = 2;
             this.buttonGestionPoderes.Text = "Gestion Poderes";
             this.buttonGestionPoderes.UseVisualStyleBackColor = true;
+            this.buttonGestionPoderes.Click += new System.EventHandler(this.buttonGestionPoderes_Click);
             // 
             // buttonGestionMetodoPago
             // 
@@ -73,6 +74,7 @@
             this.buttonGestionMetodoPago.TabIndex = 3;
             this.buttonGestionMetodoPago.Text = "Gestion Metodo de Pago";
             this.buttonGestionMetodoPago.UseVisualStyleBackColor = true;
+            this.buttonGestionMetodoPago.Click += new System.EventHandler(this.buttonGestionMetodoPago_Click);
             // 
             // buttonGestionEquipos
             // 
@@ -82,6 +84,7 @@
             this.buttonGestionEquipos.TabIndex = 4;
             this.buttonGestionEquipos.Text = "Gestion Equipos";
             this.buttonGestionEquipos.UseVisualStyleBackColor = true;
+            this.buttonGestionEquipos.Click += new System.EventHandler(this.buttonGestionEquipos_Click);
             // 
             // buttonGestionVacaciones
             // 
@@ -91,6 +94,7 @@
             this.buttonGestionVacaciones.TabIndex = 5;
             this.buttonGestionVacaciones.Text = "Gestion Vacaciones";
             this.buttonGestionVacaciones.UseVisualStyleBackColor = true;
+            this.buttonGestionVacaciones.Click += new System.EventHandler(this.buttonGestionVacaciones_Click);
             // 
             // buttonReportes
             // 
@@ -100,6 +104,7 @@
             this.buttonReportes.TabIndex = 6;
             this.buttonReportes.Text = "Reportes";
             this.buttonReportes.UseVisualStyleBackColor = true;
+            this.buttonReportes.Click += new System.EventHandler(this.buttonReportes_Click);
             // 
             // FormPrincipal
             // 
