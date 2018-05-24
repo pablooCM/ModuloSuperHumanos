@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="EquiposTrabajo.cs" />
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +78,8 @@
     <Compile Include="FormPoderes.Designer.cs">
       <DependentUpon>FormPoderes.cs</DependentUpon>
     </Compile>
+    <Compile Include="MetodosPago.cs" />
+    <Compile Include="Poderes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FormReportes.cs">
@@ -90,6 +94,9 @@
     <Compile Include="FormSuperHumano.Designer.cs">
       <DependentUpon>FormSuperHumano.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes.cs" />
+    <Compile Include="SuperHumano.cs" />
+    <Compile Include="Vacaciones.cs" />
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
