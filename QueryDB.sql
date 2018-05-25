@@ -174,3 +174,21 @@ create table IntermediaPoderesPais(
 		on delete cascade
 		on update cascade
 )
+
+--Inserciones
+
+  insert into TiposDePoder values (1, 'tierra')
+  insert into TiposDePoder values (2, 'aire')
+  insert into TiposDePoder values (3, 'fuego')
+
+  insert into Poderes values(1, 'volar',2)
+  insert into Poderes values(2, 'Hulk aplasta', 1)
+
+  insert into Categoria values(1,'Principiante', 'Pos que esta empezando')
+  insert into Categoria values(2,'Intermedio', 'Como quien dice, a medio palo')
+  insert into Categoria values(3,'Avanzado', 'Ya tiene ratillo y se ha echado bastantes enemigos')
+  insert into Categoria values(4,'Super Avanzado', 'Ya se echo a alguien bien malote y salio en las noticias')
+  insert into Categoria values(5,'Vengador', 'Amigo de Tony y con acceso a New Avengers Facility')
+  insert into Categoria values(6,'Celestial', 'Al nivel del shrico de Thor y Loki, un Goku basicamente')
+
+  select * from Poderes
