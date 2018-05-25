@@ -64,6 +64,13 @@
             this.buttonAsignarEnemigo = new System.Windows.Forms.Button();
             this.buttonAsignarCategoria = new System.Windows.Forms.Button();
             this.buttonConsultaCategoria = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxEstadoPoder = new System.Windows.Forms.TextBox();
+            this.textBoxGeneraIdPoder = new System.Windows.Forms.TextBox();
+            this.textBoxGeneraIdCategoria = new System.Windows.Forms.TextBox();
+            this.labelResultadoConsultaCategoria = new System.Windows.Forms.Label();
+            this.textBoxConsultaCategoria = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelDNI
@@ -168,7 +175,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(11, 430);
+            this.label10.Location = new System.Drawing.Point(11, 405);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(91, 13);
             this.label10.TabIndex = 11;
@@ -259,13 +266,6 @@
             // comboBoxEstado
             // 
             this.comboBoxEstado.FormattingEnabled = true;
-            this.comboBoxEstado.Items.AddRange(new object[] {
-            "Vivo",
-            "Activo",
-            "Retirado",
-            "Cuidando a Martha",
-            "Destruido por Thanos",
-            "Ya no sale ni en la peli de Deadpool"});
             this.comboBoxEstado.Location = new System.Drawing.Point(151, 310);
             this.comboBoxEstado.Name = "comboBoxEstado";
             this.comboBoxEstado.Size = new System.Drawing.Size(158, 21);
@@ -281,7 +281,7 @@
             // comboBoxSeleccionePoder
             // 
             this.comboBoxSeleccionePoder.FormattingEnabled = true;
-            this.comboBoxSeleccionePoder.Location = new System.Drawing.Point(151, 422);
+            this.comboBoxSeleccionePoder.Location = new System.Drawing.Point(151, 397);
             this.comboBoxSeleccionePoder.Name = "comboBoxSeleccionePoder";
             this.comboBoxSeleccionePoder.Size = new System.Drawing.Size(158, 21);
             this.comboBoxSeleccionePoder.TabIndex = 25;
@@ -297,13 +297,6 @@
             // comboBoxSeleccioneCategoria
             // 
             this.comboBoxSeleccioneCategoria.FormattingEnabled = true;
-            this.comboBoxSeleccioneCategoria.Items.AddRange(new object[] {
-            "Principiante",
-            "Intermedio",
-            "Avanzado",
-            "Super Avanzado",
-            "Vengador",
-            "Celestial"});
             this.comboBoxSeleccioneCategoria.Location = new System.Drawing.Point(151, 490);
             this.comboBoxSeleccioneCategoria.Name = "comboBoxSeleccioneCategoria";
             this.comboBoxSeleccioneCategoria.Size = new System.Drawing.Size(158, 21);
@@ -317,6 +310,7 @@
             this.buttonCrear.TabIndex = 28;
             this.buttonCrear.Text = "Crear";
             this.buttonCrear.UseVisualStyleBackColor = true;
+            this.buttonCrear.Click += new System.EventHandler(this.buttonCrear_Click);
             // 
             // buttonConsulta
             // 
@@ -326,6 +320,7 @@
             this.buttonConsulta.TabIndex = 29;
             this.buttonConsulta.Text = "Consulta";
             this.buttonConsulta.UseVisualStyleBackColor = true;
+            this.buttonConsulta.Click += new System.EventHandler(this.buttonConsulta_Click);
             // 
             // buttonActualizar
             // 
@@ -335,6 +330,7 @@
             this.buttonActualizar.TabIndex = 30;
             this.buttonActualizar.Text = "Actualizar";
             this.buttonActualizar.UseVisualStyleBackColor = true;
+            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
             // 
             // buttonBorrar
             // 
@@ -344,6 +340,7 @@
             this.buttonBorrar.TabIndex = 31;
             this.buttonBorrar.Text = "Borrar";
             this.buttonBorrar.UseVisualStyleBackColor = true;
+            this.buttonBorrar.Click += new System.EventHandler(this.buttonBorrar_Click);
             // 
             // buttonAsignarPoder
             // 
@@ -353,6 +350,7 @@
             this.buttonAsignarPoder.TabIndex = 32;
             this.buttonAsignarPoder.Text = "Asignar Poder";
             this.buttonAsignarPoder.UseVisualStyleBackColor = true;
+            this.buttonAsignarPoder.Click += new System.EventHandler(this.buttonAsignarPoder_Click);
             // 
             // buttonAsignarEnemigo
             // 
@@ -371,21 +369,84 @@
             this.buttonAsignarCategoria.TabIndex = 34;
             this.buttonAsignarCategoria.Text = "Asignar Categoria";
             this.buttonAsignarCategoria.UseVisualStyleBackColor = true;
+            this.buttonAsignarCategoria.Click += new System.EventHandler(this.buttonAsignarCategoria_Click);
             // 
             // buttonConsultaCategoria
             // 
-            this.buttonConsultaCategoria.Location = new System.Drawing.Point(220, 539);
+            this.buttonConsultaCategoria.Location = new System.Drawing.Point(308, 538);
             this.buttonConsultaCategoria.Name = "buttonConsultaCategoria";
             this.buttonConsultaCategoria.Size = new System.Drawing.Size(127, 23);
             this.buttonConsultaCategoria.TabIndex = 35;
             this.buttonConsultaCategoria.Text = "Consulta Categoria";
             this.buttonConsultaCategoria.UseVisualStyleBackColor = true;
+            this.buttonConsultaCategoria.Click += new System.EventHandler(this.buttonConsultaCategoria_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(11, 432);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(70, 13);
+            this.label13.TabIndex = 36;
+            this.label13.Text = "Estado poder";
+            // 
+            // textBoxEstadoPoder
+            // 
+            this.textBoxEstadoPoder.Location = new System.Drawing.Point(151, 425);
+            this.textBoxEstadoPoder.Name = "textBoxEstadoPoder";
+            this.textBoxEstadoPoder.Size = new System.Drawing.Size(158, 20);
+            this.textBoxEstadoPoder.TabIndex = 37;
+            // 
+            // textBoxGeneraIdPoder
+            // 
+            this.textBoxGeneraIdPoder.Location = new System.Drawing.Point(0, 576);
+            this.textBoxGeneraIdPoder.Name = "textBoxGeneraIdPoder";
+            this.textBoxGeneraIdPoder.Size = new System.Drawing.Size(10, 20);
+            this.textBoxGeneraIdPoder.TabIndex = 38;
+            // 
+            // textBoxGeneraIdCategoria
+            // 
+            this.textBoxGeneraIdCategoria.Location = new System.Drawing.Point(151, 541);
+            this.textBoxGeneraIdCategoria.Name = "textBoxGeneraIdCategoria";
+            this.textBoxGeneraIdCategoria.Size = new System.Drawing.Size(113, 20);
+            this.textBoxGeneraIdCategoria.TabIndex = 39;
+            // 
+            // labelResultadoConsultaCategoria
+            // 
+            this.labelResultadoConsultaCategoria.AutoSize = true;
+            this.labelResultadoConsultaCategoria.Location = new System.Drawing.Point(169, 579);
+            this.labelResultadoConsultaCategoria.Name = "labelResultadoConsultaCategoria";
+            this.labelResultadoConsultaCategoria.Size = new System.Drawing.Size(0, 13);
+            this.labelResultadoConsultaCategoria.TabIndex = 40;
+            // 
+            // textBoxConsultaCategoria
+            // 
+            this.textBoxConsultaCategoria.Location = new System.Drawing.Point(151, 568);
+            this.textBoxConsultaCategoria.Name = "textBoxConsultaCategoria";
+            this.textBoxConsultaCategoria.Size = new System.Drawing.Size(325, 20);
+            this.textBoxConsultaCategoria.TabIndex = 41;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 544);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(108, 13);
+            this.label14.TabIndex = 42;
+            this.label14.Text = "Digite id de Categoria";
             // 
             // FormSuperHumano
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 583);
+            this.ClientSize = new System.Drawing.Size(497, 614);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.textBoxConsultaCategoria);
+            this.Controls.Add(this.labelResultadoConsultaCategoria);
+            this.Controls.Add(this.textBoxGeneraIdCategoria);
+            this.Controls.Add(this.textBoxGeneraIdPoder);
+            this.Controls.Add(this.textBoxEstadoPoder);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.buttonConsultaCategoria);
             this.Controls.Add(this.buttonAsignarCategoria);
             this.Controls.Add(this.buttonAsignarEnemigo);
@@ -445,27 +506,34 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBoxDNI;
-        private System.Windows.Forms.TextBox textBoxNombre;
-        private System.Windows.Forms.TextBox textBoxApellido1;
-        private System.Windows.Forms.TextBox textBoxApellido2;
-        private System.Windows.Forms.TextBox textBoxCiudad;
-        private System.Windows.Forms.TextBox textBoxPais;
-        private System.Windows.Forms.TextBox textBoxCorreoElectronico;
-        private System.Windows.Forms.TextBox textBoxNombreClave;
-        private System.Windows.Forms.DateTimePicker dateTimePickerFechaCumpleannos;
-        private System.Windows.Forms.ComboBox comboBoxEstado;
-        private System.Windows.Forms.TextBox textBoxSalario;
-        private System.Windows.Forms.ComboBox comboBoxSeleccionePoder;
-        private System.Windows.Forms.ComboBox comboBoxSeleccioneEnemigo;
-        private System.Windows.Forms.ComboBox comboBoxSeleccioneCategoria;
-        private System.Windows.Forms.Button buttonCrear;
-        private System.Windows.Forms.Button buttonConsulta;
-        private System.Windows.Forms.Button buttonActualizar;
-        private System.Windows.Forms.Button buttonBorrar;
-        private System.Windows.Forms.Button buttonAsignarPoder;
-        private System.Windows.Forms.Button buttonAsignarEnemigo;
-        private System.Windows.Forms.Button buttonAsignarCategoria;
-        private System.Windows.Forms.Button buttonConsultaCategoria;
+        public System.Windows.Forms.TextBox textBoxDNI;
+        public System.Windows.Forms.TextBox textBoxNombre;
+        public System.Windows.Forms.TextBox textBoxApellido1;
+        public System.Windows.Forms.TextBox textBoxApellido2;
+        public System.Windows.Forms.TextBox textBoxCiudad;
+        public System.Windows.Forms.TextBox textBoxPais;
+        public System.Windows.Forms.TextBox textBoxCorreoElectronico;
+        public System.Windows.Forms.TextBox textBoxNombreClave;
+        public System.Windows.Forms.DateTimePicker dateTimePickerFechaCumpleannos;
+        public System.Windows.Forms.ComboBox comboBoxEstado;
+        public System.Windows.Forms.TextBox textBoxSalario;
+        public System.Windows.Forms.ComboBox comboBoxSeleccionePoder;
+        public System.Windows.Forms.ComboBox comboBoxSeleccioneEnemigo;
+        public System.Windows.Forms.ComboBox comboBoxSeleccioneCategoria;
+        public System.Windows.Forms.Button buttonCrear;
+        public System.Windows.Forms.Button buttonConsulta;
+        public System.Windows.Forms.Button buttonActualizar;
+        public System.Windows.Forms.Button buttonBorrar;
+        public System.Windows.Forms.Button buttonAsignarPoder;
+        public System.Windows.Forms.Button buttonAsignarEnemigo;
+        public System.Windows.Forms.Button buttonAsignarCategoria;
+        public System.Windows.Forms.Button buttonConsultaCategoria;
+        private System.Windows.Forms.Label label13;
+        public System.Windows.Forms.TextBox textBoxEstadoPoder;
+        private System.Windows.Forms.TextBox textBoxGeneraIdPoder;
+        private System.Windows.Forms.TextBox textBoxGeneraIdCategoria;
+        private System.Windows.Forms.Label labelResultadoConsultaCategoria;
+        public System.Windows.Forms.TextBox textBoxConsultaCategoria;
+        private System.Windows.Forms.Label label14;
     }
 }

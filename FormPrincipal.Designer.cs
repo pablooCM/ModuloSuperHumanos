@@ -55,6 +55,7 @@
             this.buttonPruebaConexion.TabIndex = 1;
             this.buttonPruebaConexion.Text = "Probar Conexion con BD";
             this.buttonPruebaConexion.UseVisualStyleBackColor = true;
+            this.buttonPruebaConexion.Click += new System.EventHandler(this.buttonPruebaConexion_Click);
             // 
             // buttonGestionPoderes
             // 

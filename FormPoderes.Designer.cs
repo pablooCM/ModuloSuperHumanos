@@ -40,7 +40,6 @@
             this.listBoxPaises = new System.Windows.Forms.ListBox();
             this.listBoxPaisesCobertura = new System.Windows.Forms.ListBox();
             this.buttonAgregar = new System.Windows.Forms.Button();
-            this.buttonQuitar = new System.Windows.Forms.Button();
             this.comboBoxEstadoPoder = new System.Windows.Forms.ComboBox();
             this.comboBoxSuperHumano = new System.Windows.Forms.ComboBox();
             this.buttonQuitarPoderes = new System.Windows.Forms.Button();
@@ -48,6 +47,8 @@
             this.buttonConsultarPoder = new System.Windows.Forms.Button();
             this.buttonActualizarPoder = new System.Windows.Forms.Button();
             this.buttonBorrarPoder = new System.Windows.Forms.Button();
+            this.textBoxGeneraIdPais = new System.Windows.Forms.TextBox();
+            this.textBoxGeneraIdTipoPoder = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -150,15 +151,7 @@
             this.buttonAgregar.TabIndex = 11;
             this.buttonAgregar.Text = ">>";
             this.buttonAgregar.UseVisualStyleBackColor = true;
-            // 
-            // buttonQuitar
-            // 
-            this.buttonQuitar.Location = new System.Drawing.Point(195, 199);
-            this.buttonQuitar.Name = "buttonQuitar";
-            this.buttonQuitar.Size = new System.Drawing.Size(28, 23);
-            this.buttonQuitar.TabIndex = 12;
-            this.buttonQuitar.Text = "<<";
-            this.buttonQuitar.UseVisualStyleBackColor = true;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
             // comboBoxEstadoPoder
             // 
@@ -201,6 +194,7 @@
             this.buttonCrearPoder.TabIndex = 16;
             this.buttonCrearPoder.Text = "Crear Poder";
             this.buttonCrearPoder.UseVisualStyleBackColor = true;
+            this.buttonCrearPoder.Click += new System.EventHandler(this.buttonCrearPoder_Click);
             // 
             // buttonConsultarPoder
             // 
@@ -210,6 +204,7 @@
             this.buttonConsultarPoder.TabIndex = 17;
             this.buttonConsultarPoder.Text = "Consultar Poder";
             this.buttonConsultarPoder.UseVisualStyleBackColor = true;
+            this.buttonConsultarPoder.Click += new System.EventHandler(this.buttonConsultarPoder_Click);
             // 
             // buttonActualizarPoder
             // 
@@ -219,6 +214,7 @@
             this.buttonActualizarPoder.TabIndex = 18;
             this.buttonActualizarPoder.Text = "Actualizar Poder";
             this.buttonActualizarPoder.UseVisualStyleBackColor = true;
+            this.buttonActualizarPoder.Click += new System.EventHandler(this.buttonActualizarPoder_Click);
             // 
             // buttonBorrarPoder
             // 
@@ -228,12 +224,29 @@
             this.buttonBorrarPoder.TabIndex = 19;
             this.buttonBorrarPoder.Text = "Borrar Poder";
             this.buttonBorrarPoder.UseVisualStyleBackColor = true;
+            this.buttonBorrarPoder.Click += new System.EventHandler(this.buttonBorrarPoder_Click);
+            // 
+            // textBoxGeneraIdPais
+            // 
+            this.textBoxGeneraIdPais.Location = new System.Drawing.Point(333, 450);
+            this.textBoxGeneraIdPais.Name = "textBoxGeneraIdPais";
+            this.textBoxGeneraIdPais.Size = new System.Drawing.Size(10, 20);
+            this.textBoxGeneraIdPais.TabIndex = 20;
+            // 
+            // textBoxGeneraIdTipoPoder
+            // 
+            this.textBoxGeneraIdTipoPoder.Location = new System.Drawing.Point(349, 450);
+            this.textBoxGeneraIdTipoPoder.Name = "textBoxGeneraIdTipoPoder";
+            this.textBoxGeneraIdTipoPoder.Size = new System.Drawing.Size(10, 20);
+            this.textBoxGeneraIdTipoPoder.TabIndex = 21;
             // 
             // FormPoderes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 499);
+            this.Controls.Add(this.textBoxGeneraIdTipoPoder);
+            this.Controls.Add(this.textBoxGeneraIdPais);
             this.Controls.Add(this.buttonBorrarPoder);
             this.Controls.Add(this.buttonActualizarPoder);
             this.Controls.Add(this.buttonConsultarPoder);
@@ -241,7 +254,6 @@
             this.Controls.Add(this.buttonQuitarPoderes);
             this.Controls.Add(this.comboBoxSuperHumano);
             this.Controls.Add(this.comboBoxEstadoPoder);
-            this.Controls.Add(this.buttonQuitar);
             this.Controls.Add(this.buttonAgregar);
             this.Controls.Add(this.listBoxPaisesCobertura);
             this.Controls.Add(this.listBoxPaises);
@@ -275,7 +287,6 @@
         private System.Windows.Forms.ListBox listBoxPaises;
         private System.Windows.Forms.ListBox listBoxPaisesCobertura;
         private System.Windows.Forms.Button buttonAgregar;
-        private System.Windows.Forms.Button buttonQuitar;
         private System.Windows.Forms.ComboBox comboBoxEstadoPoder;
         private System.Windows.Forms.ComboBox comboBoxSuperHumano;
         private System.Windows.Forms.Button buttonQuitarPoderes;
@@ -283,5 +294,7 @@
         private System.Windows.Forms.Button buttonConsultarPoder;
         private System.Windows.Forms.Button buttonActualizarPoder;
         private System.Windows.Forms.Button buttonBorrarPoder;
+        private System.Windows.Forms.TextBox textBoxGeneraIdPais;
+        private System.Windows.Forms.TextBox textBoxGeneraIdTipoPoder;
     }
 }

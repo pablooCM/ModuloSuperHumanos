@@ -58,5 +58,11 @@ namespace ModuloSuperHumanos
             FormReportes nuevaV = new FormReportes();
             nuevaV.Show();
         }
+
+        private void buttonPruebaConexion_Click(object sender, EventArgs e)
+        {
+            Conexion nuevaC = new Conexion();
+            nuevaC.abreConexion();
+        }
     }
 }
