@@ -60,7 +60,8 @@ create table EquipoTrabajo(
 create table Vacaciones(
 	idVacaciones int,
 	fechaSalida date,
-	fechaVuelta date
+	fechaVuelta date,
+	lugares varchar(200)
 	primary key (idVacaciones)
 )
 
@@ -99,7 +100,6 @@ create table IntermediaSuperHumanoCategoria(
 create table IntermediaSuperHumanoEquipoTrabajo(
 	DNI int,
 	idEquipo int,
-	cantidadSuperHumanos int,
 	primary key (DNI, idEquipo),
 	foreign key (DNI) references SuperHumano(DNI)
 		on delete cascade
@@ -191,4 +191,9 @@ create table IntermediaPoderesPais(
   insert into Categoria values(5,'Vengador', 'Amigo de Tony y con acceso a New Avengers Facility')
   insert into Categoria values(6,'Celestial', 'Al nivel del shrico de Thor y Loki, un Goku basicamente')
 
-  select * from Poderes
+  insert into MetodoPago values(1, 'efectivo')
+  insert into MetodoPago values(2, 'transferencia')
+  insert into MetodoPago values(3, 'PayPal')
+  insert into MetodoPago values(4, 'especies :3')
+  insert into MetodoPago values(5, 'vibranium')
+  insert into MetodoPago values(6, 'tarjeta')

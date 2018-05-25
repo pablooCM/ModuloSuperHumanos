@@ -122,3 +122,87 @@ create procedure borrarPoder
 		from Poderes
 		where idPoder = @idPoder
 	end
+
+--Registrar metodo pago
+create procedure registraMetodoPagoconSuper
+	@DNI int,
+	@idMetodoPago int
+	as
+	begin
+		insert into IntermediaSuperHumanoMetodoPago values(@DNI, @idMetodoPago)
+	end
+
+--Crear itinerario
+create procedure crearItinerario
+	@idVacaciones int,
+	@fechaSalida date,
+	@fechaVuelta date,
+	@lugares varchar(200)
+	as
+	begin
+		insert into Vacaciones values (@idVacaciones, @fechaSalida, @fechaVuelta, @lugares)
+	end
+
+--Asignar vacaciones a Super Humano
+create procedure asignaVacacionesSuperHumano
+	@DNI int,
+	@idVacaciones int
+	as
+	begin
+		insert into IntermediaSuperHumanoVacaciones values (@DNI, @idVacaciones)
+	end
+
+--Crear equipo
+create procedure crearEquipo
+	@idEquipo int,
+	@nombreEquipo varchar(30)
+	as
+	begin
+		insert into EquipoTrabajo values (@idEquipo, @nombreEquipo)
+	end
+
+--Actualizar equipo
+create procedure actualizarEquipo
+	@idEquipo int,
+	@nombreEquipo varchar(30)
+	as
+	begin
+	SET NOCOUNT ON
+	UPDATE EquipoTrabajo
+	SET
+		nombreEquipo = @nombreEquipo
+		from EquipoTrabajo
+		where 
+		idEquipo = @idEquipo
+	end
+
+--Borrar equipo
+
+create procedure borrarEquipo
+	@idEquipo int
+	as
+	begin
+		delete EquipoTrabajo
+		from EquipoTrabajo
+		where idEquipo = @idEquipo
+	end
+--Asignar super humano a equipo
+create procedure asignarSuperHumanoaEquipo
+	@DNI int,
+	@idEquipo int
+	as
+	begin
+		insert into IntermediaSuperHumanoEquipoTrabajo values (@DNI, @idEquipo)
+	end
+
+--Quitar super humano de equipo
+create procedure quitarSuperHumanodeEquipo
+	@DNI int,
+	@idEquipo int
+	as
+	begin
+	delete IntermediaSuperHumanoEquipoTrabajo
+	from IntermediaSuperHumanoEquipoTrabajo
+	where DNI = @DNI and idEquipo = @idEquipo
+	end
+
